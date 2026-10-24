@@ -1,2 +1,3 @@
 PHASE 1 - For this phase I created a Pet class with a constructor hat stores a pet name and type, then a describe method that returns a sentence about them. The pet class defines its attributes while an instance builds off that.
 
+PHASE 2 - Gave the button and hunger number ids in html. For js used getElementById to find and add click listener. Easy part was using IDs to find things. Updating the number after feeding since the page doesnt change by itself was alittle less so.
