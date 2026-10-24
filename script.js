@@ -26,3 +26,26 @@ document.getElementById("feedBtn").addEventListener("click", function () {
   pet1.feed();
   document.getElementById("hunger").textContent = pet1.hunger;
 });
+
+function addPet() {
+  const name = document.getElementById("nameInput").value;
+  const pet = new Pet(name, "Pet");
+
+  const card = document.createElement("div");
+
+  const info = document.createElement("p");
+  info.textContent = pet.name + " - Hunger: " + pet.hunger;
+
+  const feedBtn = document.createElement("button");
+  feedBtn.textContent = "Feed";
+  feedBtn.addEventListener("click", function () {
+    pet.feed();
+    info.textContent = pet.name + " - Hunger: " + pet.hunger;
+  });
+
+  card.appendChild(info);
+  card.appendChild(feedBtn);
+  document.getElementById("sanctuary").appendChild(card);
+}
+
+document.getElementById("addBtn").addEventListener("click", addPet);
