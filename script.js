@@ -10,7 +10,7 @@ class Pet {
   }
 
   feed() {
-    this.hunger = this.hunger - 10;
+    this.hunger = Math.max(0, this.hunger - 10);
   }
 }
 
@@ -49,3 +49,5 @@ function addPet() {
 }
 
 document.getElementById("addBtn").addEventListener("click", addPet);
+
+

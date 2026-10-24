@@ -3,3 +3,5 @@ PHASE 1 - For this phase I created a Pet class with a constructor hat stores a p
 PHASE 2 - Gave the button and hunger number ids in html. For js used getElementById to find and add click listener. Easy part was using IDs to find things. Updating the number after feeding since the page doesnt change by itself was alittle less so.
 
 PHASE 3 -  The pet, button and hunger were all written before this phase. Each pet with its own data and button when add pet isclicked. Pet class makes this easier becuase only wrote name, hunger and feed code once and new Pet makes as many as needed.
+
+PHASE 4 - Before the fix when feeding a pet past 0 made its hunger go into the negatives. Math.max fixed that. Also adding a pet with empty name box made a a pet with no name.
